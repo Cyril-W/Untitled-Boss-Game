@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Smartphone
+  m_Controller: {fileID: 9100000, guid: 1edbccfb86222074a8fbd1210ffc2926, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f3a07e7d7bfdb6d4ba809ad8d6c89a7e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b24eb7a8e7ea33b4ab93575a7fa9e017, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e4a221b73a740264daf4c29d2a600171, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b99b8a56d7f69564b99e290a616bc8d2, type: 2}

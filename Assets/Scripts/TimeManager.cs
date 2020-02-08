@@ -11,7 +11,9 @@ public class TimeManager : MonoBehaviour
     [SerializeField] int closingHour;
     [SerializeField] int closingMinute;
     [Header("Display")]
-    [SerializeField] Text text;
+    [SerializeField] Text clockText;
+    [SerializeField] Text officeHourFromText;
+    [SerializeField] Text officeHourToText;
     [Header("EndOfDay Event")]
     [SerializeField] UnityEvent endOfDayEvent;
 
@@ -22,15 +24,17 @@ public class TimeManager : MonoBehaviour
     void Start() {
         openingTime = openingHour * 60 + openingMinute;
         closingTime = closingHour * 60 + closingMinute;
+        officeHourFromText.text = "From: " + DisplayNumber(openingHour) + ":" + DisplayNumber(openingMinute);
+        officeHourToText.text = "To: " + DisplayNumber(closingHour) + ":" + DisplayNumber(closingMinute);
 
         currentTime = openingTime;
-        text.text = DisplayTime(currentTime);
+        clockText.text = DisplayTime(currentTime);
     }
 
     void Update()
     {
         currentTime += Time.deltaTime;
-        text.text = DisplayTime(currentTime);
+        clockText.text = DisplayTime(currentTime);
 
         if (currentTime >= closingTime) {
             endOfDayEvent.Invoke();
@@ -40,6 +44,10 @@ public class TimeManager : MonoBehaviour
     string DisplayTime(float time) {
         int hour = Mathf.FloorToInt(time / 60);
         int minutes = Mathf.RoundToInt(time - 60 * hour);
-        return (hour < 10 ? "0" : "") + hour.ToString() + ":" + (minutes < 10 ? "0" : "") + minutes.ToString();
+        return DisplayNumber(hour) + ":" + DisplayNumber(minutes);
+    }
+
+    string DisplayNumber(int number) {
+        return (number < 10 ? "0" : "") + number.ToString();
     }
 }
