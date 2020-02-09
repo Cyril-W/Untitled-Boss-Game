@@ -5,15 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    [SerializeField] KeyCode keyCode;
-    [SerializeField] UnityEvent onKeyPressed;
     [SerializeField] float timeBeforePause;
-    [SerializeField] UnityEvent onGamePaused;
-
-    public void ReloadScene() {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    [SerializeField] UnityEvent onGamePaused;      
 
     public void PauseGame() {
         StartCoroutine(WaitAndPauseGame());
@@ -30,8 +23,11 @@ public class SceneTransitionManager : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(keyCode)) {
-            onKeyPressed.Invoke();
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        } else if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
         }
     }
 }
