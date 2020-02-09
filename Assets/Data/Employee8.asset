@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
+  m_Name: Employee8
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 21300000, guid: 471ba3b7b434b454a9f044d90c7ef481, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
+  Name: Thierry
+  Question: 'Bonjour, do you want some of my baguette? '
+  Answer1: Oui
+  Response1: HAN HAN HAN
+  Delta1Resource1: 0
+  Delta1Resource2: 0
+  Delta1Resource3: 5
+  Answer2: Non merci
+  Response2: Quelle tristesse !
+  Delta2Resource1: 0
+  Delta2Resource2: 0
+  Delta2Resource3: 0

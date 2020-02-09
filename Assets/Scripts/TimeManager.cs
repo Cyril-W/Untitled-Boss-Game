@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
+    [Header("Time Speed")]
+    [SerializeField] float timeSpeed = 2;
     [Header("Opening Time")]
     [SerializeField] int openingHour;
     [SerializeField] int openingMinute;
@@ -33,7 +35,7 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
-        currentTime += Time.deltaTime;
+        currentTime += Time.deltaTime * timeSpeed;
         clockText.text = DisplayTime(currentTime);
 
         if (currentTime >= closingTime) {

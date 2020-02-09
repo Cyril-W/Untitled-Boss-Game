@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Particles
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7659e14fde59809469829060f1f1ecf8, type: 3}
+    totalSpriteSurfaceArea: 2442568
+    bindAsDefault: 1
+    storedHash:
+      serializedVersion: 2
+      Hash: 2ccc04f164cf33035fa4f6289282fc8a
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8573e414f1438294da9a77413d96dcb2, type: 3}
+  - {fileID: 21300000, guid: a491d1e5218d5eb46823ac96ba4c306c, type: 3}
+  - {fileID: 21300000, guid: 96db2c57bd659a143b4a4b2fea183c5d, type: 3}
+  - {fileID: 21300000, guid: 0ec35818592abc04e974b0cc1983d9e1, type: 3}
+  - {fileID: 21300000, guid: c952b83a8da093b4d92208eca908599c, type: 3}
+  - {fileID: 21300000, guid: 8f1444da1fd4d5844b17d3d305d51304, type: 3}
+  - {fileID: 21300000, guid: f674299bf9fc9ea4384fa14d8bba3660, type: 3}
+  - {fileID: 21300000, guid: b4a96a9bd57e43f4a89aa3d684fee531, type: 3}
+  - {fileID: 21300000, guid: 081798ddbf29a4f43918961fa17859df, type: 3}
+  - {fileID: 21300000, guid: 3fe5beafec5adca49a501c3601128e4a, type: 3}
+  - {fileID: 21300000, guid: 2ccef7bfdbe787045bbe44b4e07fd7b5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - apple-core
+  - Square
+  - plain-arrow
+  - untitled_boss_game_icon
+  - plain-square
+  - plain-circle
+  - fishbone
+  - play-button
+  - tie
+  - raccoon-head
+  - banana-peeled
+  m_Tag: Particles
+  m_IsVariant: 0

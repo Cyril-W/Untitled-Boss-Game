@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ResourcesManager : MonoBehaviour
@@ -12,7 +13,9 @@ public class ResourcesManager : MonoBehaviour
     [Header("Resource3")]
     [SerializeField] int maxResource3Amount;
     [SerializeField] Image resource3GaugeFill;
-
+    [Header("On Fail Event")]
+    [SerializeField] UnityEvent onFailEvent;
+    
     int currentResource1Amount, currentResource2Amount, currentResource3Amount;
     int deltaAnswer1Resource1, deltaAnswer1Resource2, deltaAnswer1Resource3;
     int deltaAnswer2Resource1, deltaAnswer2Resource2, deltaAnswer2Resource3;
@@ -36,20 +39,44 @@ public class ResourcesManager : MonoBehaviour
         deltaAnswer2Resource3 = employee.Delta2Resource3;
     }
 
+    void CheckIfFail() {
+        if (currentResource1Amount <= 0 || currentResource2Amount <= 0 || currentResource3Amount <= 0) {
+            onFailEvent.Invoke();
+        }
+    }
+
+    public void UpdateResource1(int deltaResource) {
+        currentResource1Amount = Mathf.Clamp(currentResource1Amount + deltaResource, 0, maxResource1Amount);
+        UpdateDisplay();
+        CheckIfFail();
+    }
+
+    public void UpdateResource2(int deltaResource) {
+        currentResource2Amount = Mathf.Clamp(currentResource2Amount + deltaResource, 0, maxResource2Amount);
+        UpdateDisplay();
+        CheckIfFail();
+    }
+
+    public void UpdateResource3(int deltaResource) {
+        currentResource3Amount = Mathf.Clamp(currentResource3Amount + deltaResource, 0, maxResource3Amount);
+        UpdateDisplay();
+        CheckIfFail();
+    }
+
     public void UpdateAnswer1() {
         currentResource1Amount = Mathf.Clamp(currentResource1Amount + deltaAnswer1Resource1, 0, maxResource1Amount);
         currentResource2Amount = Mathf.Clamp(currentResource2Amount + deltaAnswer1Resource2, 0, maxResource2Amount);
         currentResource3Amount = Mathf.Clamp(currentResource3Amount + deltaAnswer1Resource3, 0, maxResource3Amount);
-
         UpdateDisplay();
+        CheckIfFail();
     }
 
     public void UpdateAnswer2() {
         currentResource1Amount = Mathf.Clamp(currentResource1Amount + deltaAnswer2Resource1, 0, maxResource1Amount);
         currentResource2Amount = Mathf.Clamp(currentResource2Amount + deltaAnswer2Resource2, 0, maxResource2Amount);
         currentResource3Amount = Mathf.Clamp(currentResource3Amount + deltaAnswer2Resource3, 0, maxResource3Amount);
-
         UpdateDisplay();
+        CheckIfFail();
     }
 
     void UpdateDisplay() {

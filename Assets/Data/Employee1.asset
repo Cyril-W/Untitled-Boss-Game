@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
   m_Name: Employee1
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: cf6a57b4f1845af4e97d4c3c418017b3, type: 3}
-  Name: employee1
-  Question: can I?
-  Answer1: ja
-  Delta1Resource1: 20
-  Delta1Resource2: -50
-  Delta1Resource3: 40
-  Answer2: nein
-  Delta2Resource1: 20
-  Delta2Resource2: 30
-  Delta2Resource3: -50
+  Sprite: {fileID: 21300000, guid: 58ca30916438273438a3d3da2a5eef7c, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
+  Name: Mr. Totally Raccoon
+  Question: Hey boss, I need vacation Friday, for totally a raccoon reason, like eating
+    my trash or something, you know, because I'm totally a raccoon. Can I go?
+  Answer1: Are you a real raccoon?
+  Response1: WHAaaaT? Yes of course I am! Haha.ha I gotta go
+  Delta1Resource1: 0
+  Delta1Resource2: 0
+  Delta1Resource3: 0
+  Answer2: Trash are not for eating
+  Response2: PFFF I KNOW THAT! HAHAHahahaah..ha
+  Delta2Resource1: 0
+  Delta2Resource2: 0
+  Delta2Resource3: 0

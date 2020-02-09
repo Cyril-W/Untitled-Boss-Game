@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ReactionManager : MonoBehaviour
-{
+public class ReactionManager : MonoBehaviour {
     [Header("Reaction Params")]
     [SerializeField] Vector2 randomTimeBeforeAction;
     [SerializeField] Vector2 randomReactionDuration;
     [SerializeField] Vector2 randomNumberToPressKey;
-    [SerializeField] List<KeyCode> randomKeysToPress;
- 
+    [Header("Generic Reaction Event")]
+    [SerializeField] UnityEvent onKeyboardPress;
+    [SerializeField] UnityEvent onSuccessEvent;
+    [SerializeField] UnityEvent onFailEvent;
+    [SerializeField] UnityEvent dismissRaccoonEvent;
     [Header("Reaction Event Screen")]
     [SerializeField] Image gaugeScreen;
     [SerializeField] Text textScreen;
@@ -30,13 +32,20 @@ public class ReactionManager : MonoBehaviour
     [SerializeField] UnityEvent reactionClockEventStart;
     [SerializeField] UnityEvent reactionClockEventStop;
 
-    float currentTime;
+    public bool CanDismissRaccoon { get; set; }
 
+    float currentTime;
     int randomInt;
     float nexTimeBeforeAction;
     float nextReactionDuration;
     int nextNumberToPress;
     KeyCode nextKeyToPress;
+    List<KeyCode> randomKeysToPress = new List<KeyCode>(){
+        KeyCode.A, KeyCode.Z, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y, KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P,
+        KeyCode.Q, KeyCode.S, KeyCode.D, KeyCode.F, KeyCode.G, KeyCode.H, KeyCode.J, KeyCode.K, KeyCode.L, KeyCode.M,
+        KeyCode.W, KeyCode.X, KeyCode.C, KeyCode.V, KeyCode.B, KeyCode.N,
+        KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P
+    };
 
     void OnEnable()
     {
@@ -49,6 +58,7 @@ public class ReactionManager : MonoBehaviour
 
     void Update() {
         if (Input.GetKeyDown(nextKeyToPress) && nextNumberToPress > 0) {
+            onKeyboardPress.Invoke();
             nextNumberToPress--;
         }
     }
@@ -77,8 +87,10 @@ public class ReactionManager : MonoBehaviour
             default:
                 break;
         }
-     
-        StartCoroutine(WaitForKeyPress());
+
+        if (enabled) {
+            StartCoroutine(WaitForKeyPress());
+        }
     }
 
     IEnumerator WaitForKeyPress() {
@@ -103,9 +115,12 @@ public class ReactionManager : MonoBehaviour
         }
 
         if (nextNumberToPress == 0 && currentTime > 0) {
-            Debug.Log("Yes !");
+            onSuccessEvent.Invoke();
         } else {
-            Debug.Log("No ...");
+            onFailEvent.Invoke();
+            if (CanDismissRaccoon) {
+                dismissRaccoonEvent.Invoke();
+            }
         }
 
         switch (randomInt) {
@@ -131,6 +146,8 @@ public class ReactionManager : MonoBehaviour
         nextNumberToPress = Mathf.RoundToInt(Random.Range(randomNumberToPressKey.x, randomNumberToPressKey.y));
         nextKeyToPress = randomKeysToPress[Random.Range(0, randomKeysToPress.Count)];
 
-        StartCoroutine(WaitUntilNextReaction());
+        if (enabled) {
+            StartCoroutine(WaitUntilNextReaction());
+        }
     }
 }

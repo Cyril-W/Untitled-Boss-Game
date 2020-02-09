@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
+  m_Name: Employee4
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 21300000, guid: d3de6411aa7934941849cc527793c7ad, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 0}
+  Name: Yenot Bogdanoff
+  Question: I vant Vodka!!! Zis place needs Vodka founzains!!! Can we have vodka founzain
+    at vork, yes?!!
+  Answer1: Da, komrad!
+  Response1: Heehehehe
+  Delta1Resource1: -5
+  Delta1Resource2: -5
+  Delta1Resource3: -5
+  Answer2: Niet, idi nahui!
+  Response2: "\u0421\u0423\u041A\u0410 \u0411\u041B\u042F\u0414\u042C!"
+  Delta2Resource1: 0
+  Delta2Resource2: 0
+  Delta2Resource3: 0

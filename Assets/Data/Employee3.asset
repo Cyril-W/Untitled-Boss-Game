@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
   m_Name: Employee3
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: f2105a9ac9287664d975836e648d2afa, type: 3}
-  Name: employee3
-  Question: may I?
-  Answer1: yup
-  Delta1Resource1: 30
-  Delta1Resource2: -15
-  Delta1Resource3: 30
-  Answer2: meh
-  Delta2Resource1: -60
-  Delta2Resource2: 50
-  Delta2Resource3: -80
+  Sprite: {fileID: 21300000, guid: cf6a57b4f1845af4e97d4c3c418017b3, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
+  Name: Jeff McCoon
+  Question: I have an Amazing buisness idea that will pull a lot of TRA$H! But we
+    will have to let some people go.. Are you in?
+  Answer1: Yes
+  Response1: Amazing! I'll get started right away.
+  Delta1Resource1: 10
+  Delta1Resource2: -10
+  Delta1Resource3: -10
+  Answer2: No
+  Response2: Well.. Your loss!
+  Delta2Resource1: -5
+  Delta2Resource2: 0
+  Delta2Resource3: 0

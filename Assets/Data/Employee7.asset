@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
+  m_Name: Employee7
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 21300000, guid: d99c3feec9b3dbb478887ea15b4bef75, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 0}
+  Name: COONTHULHU
+  Question: MORTAL! I HAVE COME FOR YOUR RACCOON SOUL...unless you pay for my lunch..?
+  Answer1: Yes, master.
+  Response1: Wise choise, mortal
+  Delta1Resource1: 0
+  Delta1Resource2: 0
+  Delta1Resource3: 0
+  Answer2: No.
+  Response2: Then I will consume your SOUL!! (DEATH)
+  Delta2Resource1: -1000
+  Delta2Resource2: -1000
+  Delta2Resource3: -1000

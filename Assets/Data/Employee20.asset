@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
+  m_Name: Employee20
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: 21300000, guid: c061af1622ba74748bffa4fece6eb4ad, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
+  Name: Old Man John
+  Question: You know.. I should have been the boss of this place.. but they chose
+    you.. Are you happy?
+  Answer1: Yes
+  Response1: 'Well, savor it my young coon cub. One day your luck might run out... '
+  Delta1Resource1: 0
+  Delta1Resource2: 0
+  Delta1Resource3: 5
+  Answer2: No
+  Response2: Haha, is it too hard for you? I bet you won't last the week! And when
+    you get fired, I WILL SIT IN THAT CHAIR!!
+  Delta2Resource1: 0
+  Delta2Resource2: 0
+  Delta2Resource3: -5

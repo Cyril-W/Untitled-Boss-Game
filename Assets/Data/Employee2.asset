@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9c69ddb34bb784db1dce59b9c01de7, type: 3}
   m_Name: Employee2
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 58ca30916438273438a3d3da2a5eef7c, type: 3}
-  Name: employee2
-  Question: should I?
-  Answer1: yah
-  Delta1Resource1: -30
-  Delta1Resource2: 40
-  Delta1Resource3: -15
-  Answer2: neh
-  Delta2Resource1: 50
-  Delta2Resource2: -60
-  Delta2Resource3: -40
+  Sprite: {fileID: 21300000, guid: f2105a9ac9287664d975836e648d2afa, type: 3}
+  eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
+  Name: Mrs. Coonie
+  Question: We sould have a weekly trash cake day! People will love it! What do you
+    think?
+  Answer1: Yes
+  Response1: Great! We should start from today!
+  Delta1Resource1: -5
+  Delta1Resource2: 10
+  Delta1Resource3: 5
+  Answer2: No
+  Response2: Wow.. what a party pooper..
+  Delta2Resource1: 0
+  Delta2Resource2: -5
+  Delta2Resource3: -5
