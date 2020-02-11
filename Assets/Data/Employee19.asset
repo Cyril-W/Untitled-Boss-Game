@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 2b3c66ea73e1fdd47a45371eab57ea47, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
   Name: Bethany Bark
-  Question: Hey, if you hear any rumors about me I swear it isn't true.. it wasn't
+  Question: Hey, if you hear any rumors about me, I swear it isn't true.. it wasn't
     me okay? I swear it wasn't me. Don't you believe me?
   Answer1: Yes
   Response1: Good, because it's not true. None of it. Just forget I as here.

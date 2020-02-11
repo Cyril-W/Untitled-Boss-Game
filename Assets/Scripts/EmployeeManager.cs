@@ -19,12 +19,21 @@ public class EmployeeManager : MonoBehaviour
     [Header("Resource Delta")]
     [SerializeField] ResourcesManager resourcesManager;
 
+    List<EmployeeScriptable> randomEmployees;
+
     void Start() {
+        randomEmployees = new List<EmployeeScriptable>(employees);
+
         GenerateEmployee();
     }
 
     public void GenerateEmployee() {
-        var employee = employees[Random.Range(0, employees.Count)];
+        var randomIndex = Random.Range(0, randomEmployees.Count);
+        var employee = randomEmployees[randomIndex];
+        randomEmployees.Remove(employee);
+        if (randomEmployees.Count <= 0) {
+            randomEmployees = new List<EmployeeScriptable>(employees);
+        }
 
         employeeImage.sprite = employee.Sprite;
         leftEyeImage.color = employee.eyesColor;

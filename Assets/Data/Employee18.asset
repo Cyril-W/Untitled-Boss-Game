@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 41792471a2515284692bebb655fa1572, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
   Name: Miss Totally Not A Develepor
-  Question: Are you enjoying you game?
+  Question: Are you enjoying our.... I mean this game?
   Answer1: Yes
   Response1: Of course you are!
   Delta1Resource1: 5

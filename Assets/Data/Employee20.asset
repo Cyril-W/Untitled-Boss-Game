@@ -18,13 +18,12 @@ MonoBehaviour:
   Question: You know.. I should have been the boss of this place.. but they chose
     you.. Are you happy?
   Answer1: Yes
-  Response1: 'Well, savor it my young coon cub. One day your luck might run out... '
+  Response1: You don't know who you are up against..
   Delta1Resource1: 0
   Delta1Resource2: 0
   Delta1Resource3: 5
   Answer2: No
-  Response2: Haha, is it too hard for you? I bet you won't last the week! And when
-    you get fired, I WILL SIT IN THAT CHAIR!!
+  Response2: HA! I bet you won't last the week!
   Delta2Resource1: 0
   Delta2Resource2: 0
   Delta2Resource3: -5

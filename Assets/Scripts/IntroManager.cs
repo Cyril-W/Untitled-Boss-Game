@@ -4,11 +4,13 @@ using UnityEngine.Events;
 
 public class IntroManager : MonoBehaviour
 {
-    [Header("Step1-4")]
-    [SerializeField] UnityEvent onKeyPressed;
-    [Header("Step5")]
-    [SerializeField] UnityEvent onKeysPressed;
-    [Header("Step6")]
+    [Header("Space")]
+    [SerializeField] List<int> stepsToPressSpace;
+    [SerializeField] UnityEvent onSpacePressed;
+    [Header("Arrow Keys")]
+    [SerializeField] List<int> stepsToPressArrowKeys;
+    [SerializeField] UnityEvent onArrowKeysPressed;
+    [Header("Intro Completed")]
     [SerializeField] UnityEvent onIntroCompleted;
     [Header("Skip")]
     [SerializeField] UnityEvent onSkipped;
@@ -20,12 +22,12 @@ public class IntroManager : MonoBehaviour
             onSkipped.Invoke();
         }
 
-        if (currentStep < 5 && Input.GetKeyDown(KeyCode.Space)) {
+        if (stepsToPressSpace.Contains(currentStep) && Input.GetKeyDown(KeyCode.Space)) {
             currentStep++;
-            onKeyPressed.Invoke();
-        } else if (currentStep == 5 && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))) {
+            onSpacePressed.Invoke();
+        } else if (stepsToPressArrowKeys.Contains(currentStep) && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))) {
             currentStep++;
-            onKeysPressed.Invoke();
+            onArrowKeysPressed.Invoke();
         }
     }
 

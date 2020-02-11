@@ -6,15 +6,17 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionManager : MonoBehaviour
 {
     [SerializeField] float timeBeforePause;
-    [SerializeField] UnityEvent onGamePaused;      
+    [SerializeField] UnityEvent beforeOnGamePaused;
+    [SerializeField] UnityEvent afterOnGamePaused;
 
     public void PauseGame() {
         StartCoroutine(WaitAndPauseGame());
     }
 
     IEnumerator WaitAndPauseGame() {
+        beforeOnGamePaused.Invoke();
         yield return new WaitForSeconds(timeBeforePause);
-        onGamePaused.Invoke();
+        afterOnGamePaused.Invoke();
         Time.timeScale = 0;
     }
 

@@ -15,14 +15,14 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 7eda8a7444be67148b1e904cb7205248, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 0}
   Name: Heisencoon
-  Question: Hey, you want some good trash?
+  Question: Hey, you want some good blue trash?
   Answer1: Show me that good good
-  Response1: Achievement unlocked "420 BLAZE IT"
+  Response1: Of course you do.
   Delta1Resource1: -10
   Delta1Resource2: 1000
   Delta1Resource3: 5
   Answer2: '*call security*'
-  Response2: You Fucking Narc
+  Response2: Narc!
   Delta2Resource1: 5
   Delta2Resource2: 5
   Delta2Resource3: -10

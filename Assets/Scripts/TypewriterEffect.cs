@@ -9,7 +9,7 @@ public class TypewriterEffect : MonoBehaviour
     [SerializeField] UnityEvent onTypewriterStart;
     [SerializeField] UnityEvent onTypewriterStop;
 
-    Vector2 randomDelay = new Vector2(0.03f, 0.05f);
+    Vector2 randomDelay = new Vector2(0.02f, 0.03f);
     string fullText;
     string currentText;
 

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 14167e5201e6b58459bd41c91798017a, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
-  Name: '*mmmh*'
-  Question: '"*intense stare* *rubs her tighs against your*"'
+  Name: UwU
+  Question: '*intense stare* *rubs her tighs against your*'
   Answer1: '*rubs back*'
   Response1: '*files a sexual harrassment report*'
   Delta1Resource1: -1000

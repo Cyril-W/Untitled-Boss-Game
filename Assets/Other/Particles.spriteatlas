@@ -31,13 +31,15 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 7659e14fde59809469829060f1f1ecf8, type: 3}
-    totalSpriteSurfaceArea: 2442568
+    totalSpriteSurfaceArea: 2966856
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: 2ccc04f164cf33035fa4f6289282fc8a
+      Hash: 98a194213a3fc444022b766c97e52c31
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: b9aa43c058ee0a84c956f4fc88ecbf24, type: 3}
+  - {fileID: 21300000, guid: 5bdd0013544055e49badda2f53d6726c, type: 3}
   - {fileID: 21300000, guid: 8573e414f1438294da9a77413d96dcb2, type: 3}
   - {fileID: 21300000, guid: a491d1e5218d5eb46823ac96ba4c306c, type: 3}
   - {fileID: 21300000, guid: 96db2c57bd659a143b4a4b2fea183c5d, type: 3}
@@ -50,6 +52,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3fe5beafec5adca49a501c3601128e4a, type: 3}
   - {fileID: 21300000, guid: 2ccef7bfdbe787045bbe44b4e07fd7b5, type: 3}
   m_PackedSpriteNamesToIndex:
+  - plus
+  - minus
   - apple-core
   - Square
   - plain-arrow

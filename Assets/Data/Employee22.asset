@@ -15,10 +15,10 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 20a22413d0e45954199e6030758c1369, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
   Name: Uneasy Hans Beasly
-  Question: Hey boss.. I've heard a lot of scarry rumors lately so I just wanted to
+  Question: Hey boss.. I've heard a lot of scary rumors lately so I just wanted to
     ask.. Would you fire ALL your raccoonees if you were offered a lot of good TRA$H?
   Answer1: Yes
-  Response1: Oh.. I shouldn't have asked...
+  Response1: Oh.. oh no.. I shouldn't have asked...
   Delta1Resource1: 0
   Delta1Resource2: -10
   Delta1Resource3: -10

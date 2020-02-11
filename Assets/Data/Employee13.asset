@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 7b11ca3ca210f8840b1530bcdf20c462, type: 3}
   eyesColor: {r: 0.09019608, g: 0.07450981, b: 0.0627451, a: 1}
   Name: Mrs. Bluberry
-  Question: My chair is huting my tail.. I think Bethany might have chewed on it.....
+  Question: My chair is hurting my tail.. I think Bethany might have chewed on it.....
     Can I have a new one
   Answer1: Yes
   Response1: Oh thank god! Maybe my tail will stop hurting now.
